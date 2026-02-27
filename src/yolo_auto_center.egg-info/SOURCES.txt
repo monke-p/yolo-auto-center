@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/yolo_auto_center/__init__.py
+src/yolo_auto_center/auto_center.py
+src/yolo_auto_center.egg-info/PKG-INFO
+src/yolo_auto_center.egg-info/SOURCES.txt
+src/yolo_auto_center.egg-info/dependency_links.txt
+src/yolo_auto_center.egg-info/top_level.txt

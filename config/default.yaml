@@ -1,0 +1,28 @@
+# ==============================
+# YOLO Auto Center Configuration
+# ==============================
+
+# ---- Model settings ----
+model_path: "yolov8n.pt"   # Path to YOLO .pt model
+device: null                      # null = auto (CPU/CUDA)
+conf: 0.3                        # Confidence threshold
+iou: 0.5                          # IoU threshold
+imgsz: 640                        # Inference image size
+
+# ---- Input source ----
+source: "0"                       # "0" = webcam, or "rtsp://...", or "video.mp4"
+
+# ---- Target selection ----
+class_id: 41                       # Target class ID (-1 = all classes)
+select_mode: "largest"            # "largest" or "closest"
+# ---- Multi-object behavior ----
+use_group: true          # True = center centroid of all detections
+group_mode: "weighted"   # "weighted" | "mean" | "median"
+# ---- Centering behavior ----
+deadband_x: 0.02                  # Deadband for X axis (percentage of width)
+deadband_y: 0.02                  # Deadband for Y axis (percentage of height)
+smooth_frames: 3                  # Number of frames for smoothing (0 = disabled)
+
+# ---- Output options ----
+show_window: true                 # Display OpenCV window
+print_dirs: true                  # Print LEFT/RIGHT/UP/DOWN/NONE
